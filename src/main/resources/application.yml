@@ -1,0 +1,11 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /loan/v1
+spring:
+  mvc:
+    path match:
+      matching-strategy: ant-path-matcher
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/LoanDB
